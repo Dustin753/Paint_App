@@ -13,12 +13,19 @@ body{
   height: 100%;
 }
 
-.color-palet{
-  display: flex; 
+.side-bar{
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
 
-  height: 100%;
-  width: 20%;
+.color-palet{
+  display: grid; 
+  grid-template-columns: auto auto;
+  row-gap: 0;
+
+  height: auto;
+  width: 100%;
 }
 
 .color-palet div{
@@ -47,6 +54,69 @@ body{
 #red-button{
   background-color: red;
 }
+
+.brush-size-menu{
+  display: grid; 
+  grid-template-columns: auto auto;
+  row-gap: 0;
+
+  height: auto;
+  width: 100%;
+}
+
+.brush-size-menu-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: solid 1px black;
+  height: 20px; 
+  width: 20px;
+}
+
+#size-1 div{
+  background-color: black;
+  height: 4px;
+  width: 4px;
+  border-radius: 16px;
+}
+
+#size-2 div{
+  background-color: black;
+  height: 6px;
+  width: 6px;
+  border-radius: 16px;
+}
+
+#size-3 div{
+  background-color: black;
+  height: 8px;
+  width: 8px;
+  border-radius: 16px;
+}
+
+#size-4 div{
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 16px;
+}
+
+#size-5 div{
+  background-color: black;
+  height: 12px;
+  width: 12px;
+  border-radius: 16px;
+}
+
+#size-6 div{
+  background-color: black;
+  height: 14px;
+  width: 14px;
+  border-radius: 16px;
+}
+
+
 
 .canvas-container{
   height: 100%;

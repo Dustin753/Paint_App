@@ -22,6 +22,15 @@ const redButton = document.querySelector("#red-button");
 const greenButton = document.querySelector("#green-button");
 const blueButton = document.querySelector("#blue-button");
 
+// VARS RELATED TO BRUSH SIZE 
+const sizeOne = document.querySelector("#size-1");
+const sizeTwo = document.querySelector("#size-2");
+const sizeThree = document.querySelector("#size-3");
+const sizeFour = document.querySelector("#size-4");
+const sizeFive = document.querySelector("#size-5");
+const sizeSix = document.querySelector("#size-6");
+const sizeMultiplier = 2;
+
 window.addEventListener("load", () => {
   canvas.width = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
@@ -48,9 +57,13 @@ const drawing = (e) => {
   ctx.stroke();
 }
 
-// METHODS FOR CHOOSING COLORS
+// METHODS FOR BRUSH OPTIONS
 const changeColor = (color) => {
   currentColor = color;
+}
+
+const changeBrushSize = (size) => {
+  brushSize = size;
 }
 
 
@@ -61,8 +74,17 @@ canvas.addEventListener("mousedown", startDrawing);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", stopDrawing);
 
+// change brush stroke color
 whiteButton.addEventListener('click', () => changeColor('white'));
 blackButton.addEventListener('click', () => changeColor('black'));
 redButton.addEventListener('click', () => changeColor('red'));
 greenButton.addEventListener('click', () => changeColor('green'));
 blueButton.addEventListener('click', () => changeColor('blue'));
+
+// change brush stroke size 
+sizeOne.addEventListener('click', () => changeBrushSize(1 * sizeMultiplier));
+sizeTwo.addEventListener('click', () => changeBrushSize(2 * sizeMultiplier));
+sizeThree.addEventListener('click', () => changeBrushSize(3 * sizeMultiplier));
+sizeFour.addEventListener('click', () => changeBrushSize(4 * sizeMultiplier));
+sizeFive.addEventListener('click', () => changeBrushSize(5 * sizeMultiplier));
+sizeSix.addEventListener('click', () => changeBrushSize(6 * sizeMultiplier));
