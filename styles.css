@@ -1,12 +1,56 @@
 *{
   box-sizing: border-box;
-  width: 0;
-  padding: 0;
 }
 
 body{
   width: 100vw;
   height: 100vh;
+}
+
+.app-main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.color-palet{
+  display: flex; 
+  flex-direction: column;
+
+  height: 100%;
+  width: 20%;
+}
+
+.color-palet div{
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: black;
+}
+
+#white-button{
+  background-color: white;
+}
+
+#black-button{
+  background-color: black;
+}
+
+#blue-button{
+  background-color: blue;;
+}
+
+#green-button{
+  background-color: green;
+}
+
+#red-button{
+  background-color: red;
+}
+
+.canvas-container{
+  height: 100%;
+  width: 80%;
 }
 
 .my-canvas{
