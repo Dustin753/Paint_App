@@ -21,6 +21,12 @@ const blackButton = document.querySelector("#black-button");
 const redButton = document.querySelector("#red-button");
 const greenButton = document.querySelector("#green-button");
 const blueButton = document.querySelector("#blue-button");
+const purpleButton = document.querySelector('#purple-button');
+const yellowButton = document.querySelector('#yellow-button');
+const pinkButton = document.querySelector('#pink-button');
+const orangeButton = document.querySelector("#orange-button");
+const grayButton = document.querySelector('#gray-button');
+const brownButton = document.querySelector('#brown-button');
 
 // VARS RELATED TO BRUSH SIZE 
 const sizeOne = document.querySelector("#size-1");
@@ -80,6 +86,12 @@ blackButton.addEventListener('click', () => changeColor('black'));
 redButton.addEventListener('click', () => changeColor('red'));
 greenButton.addEventListener('click', () => changeColor('green'));
 blueButton.addEventListener('click', () => changeColor('blue'));
+purpleButton.addEventListener('click', () => changeColor('purple'));
+yellowButton.addEventListener('click', () => changeColor('yellow'));
+pinkButton.addEventListener('click', () => changeColor('pink'));
+orangeButton.addEventListener('click', changeColor('orange'));
+grayButton.addEventListener('click', changeColor('gray'));
+brownButton.addEventListener('click', changeColor('brown'));
 
 // change brush stroke size 
 sizeOne.addEventListener('click', () => changeBrushSize(1 * sizeMultiplier));
